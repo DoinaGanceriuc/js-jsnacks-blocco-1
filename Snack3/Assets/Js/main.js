@@ -4,6 +4,7 @@
 -prompt
 -querySelector
 -for
+-if/else
 */
 
 // inizializzazione variabili
@@ -18,11 +19,21 @@ for (let index = 0; index < 10; index++) {
     sumNumbers = sumNumbers + askNumber;
     /* console.log(sumNumbers); */
 
+ if (isNaN(askNumber)) {
+     message = true;
+     /* console.log("digitare un numero corretto"); */
+
 }
 
+}
 
-//stampa a schermo
-document.querySelector("h1").innerHTML = `la somma dei numeri digitati è: ${sumNumbers}`;
+ if (message == true) {
+    document.querySelector("h1").innerHTML = `digitare un numero corretto`;
+} else {
+    //stampa a schermo
+    document.querySelector("h1").innerHTML = `la somma dei numeri digitati è: ${sumNumbers}`;
+
+}
  
 
 
