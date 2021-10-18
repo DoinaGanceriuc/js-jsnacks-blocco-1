@@ -13,37 +13,16 @@ se è dispari inseriscilo nell’array.. */
 //inizializzazione variabili
 const numbers = [];
 
-const numberOne = Number(prompt("Inserisci un numero"));
-const numberTwo = Number(prompt("Inserisci un altro numero"));
-const numberThree = Number(prompt("Inserisci un altro numero"));
-const numberFour = Number(prompt("Inserisci un altro numero"));
-const numberFive = Number(prompt("Inserisci un altro numero"));
-const numberSix = Number(prompt("Inserisci un altro numero"));
-
+// ciclo for
+for (let index = 0; index < 6; index++) {
+    /* const element = numbers[index]; */
+    const askNumber = Number(prompt("Inserisci un numero"));
+    /* console.log(askNumber); */
 
 // condizione di verifica
-if (numberOne % 2 != 0) {
-    numbers.push(numberOne);
-    /* console.log(numbers); */
+ if (askNumber % 2 != 0) {
+    numbers.push(askNumber);
 }
-if (numberTwo % 2 != 0) {
-    numbers.push(numberTwo);
-    /* console.log(numbers); */
-}
-if (numberThree % 2 != 0) {
-    numbers.push(numberThree);
-    /* console.log(numbers); */
-}
-if (numberFour % 2 != 0) {
-    numbers.push(numberFour);
-    /* console.log(numbers); */
-}
-if (numberFive % 2 != 0) {
-    numbers.push(numberFive);
-    /* console.log(numbers); */
-}
-if (numberSix % 2 != 0) {
-    numbers.push(numberSix);
     
 }
 
